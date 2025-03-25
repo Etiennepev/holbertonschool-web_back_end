@@ -1,0 +1,18 @@
+# Ignorer node_modules (dépendances)
+node_modules/
+npm-debug.log
+yarn.lock
+
+# Ignorer les fichiers de build
+dist/
+build/
+
+# Ignorer les fichiers sensibles ou spécifiques à l'IDE
+.env
+*.log
+.DS_Store
+.idea/
+.vscode/
+
+# Ignorer les fichiers de test coverage
+coverage/
