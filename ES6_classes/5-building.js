@@ -12,6 +12,6 @@ export default class Building {
     return this._sqft;
   }
   evacuationWarningMessage() {
-    return `Evacuate ${this._floor} slowly`;
+    return `Evacuate ${this._floor} floor slowly`;
   }
 }
