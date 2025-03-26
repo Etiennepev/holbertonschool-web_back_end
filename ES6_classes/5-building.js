@@ -14,6 +14,6 @@ export default class Building {
   }
 
   evacuationWarningMessage() {
-    return 'Class extending Building must override evacuationWarningMessage';
+    return `Class extending Building must override evacuationWarningMessage`;
   }
 }
