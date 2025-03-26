@@ -14,6 +14,6 @@ export default class Building {
   }
 
   evacuationWarningMessage() {
-    return `Evacuate slowly the ${this._floors} floors`;
+    return 'Class extending Building must override evacuationWarningMessage';
   }
 }
