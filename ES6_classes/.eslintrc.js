@@ -2,13 +2,18 @@ module.exports = {
   env: {
     browser: false,
     es6: true,
-    jest: false,
+    jest: true,
   },
   extends: [
     'airbnb-base',
+    'plugin:jest/all',
   ],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
   parserOptions: {
-    ecmaVersion: 2021,
+    ecmaVersion: 2018,
     sourceType: 'module',
   },
   plugins: ['jest'],
@@ -23,10 +28,10 @@ module.exports = {
       'WithStatement',
     ],
   },
-  overrides: [
+  overrides:[
     {
       files: ['*.js'],
       excludedFiles: 'babel.config.js',
-    },
-  ],
+    }
+  ]
 };
