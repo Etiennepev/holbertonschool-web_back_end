@@ -1,10 +1,8 @@
-/* eslint-env node */
 module.exports = {
 	env: {
 	  browser: false,
 	  es6: true,
 	  jest: true,
-	  node: true,
 	},
 	extends: [
 	  'airbnb-base',
@@ -13,8 +11,6 @@ module.exports = {
 	globals: {
 	  Atomics: 'readonly',
 	  SharedArrayBuffer: 'readonly',
-	  module: 'readonly',
-	  require: 'readonly',
 	},
 	parserOptions: {
 	  ecmaVersion: 2018,
@@ -22,6 +18,8 @@ module.exports = {
 	},
 	plugins: ['jest'],
 	rules: {
+	  'max-classes-per-file': 'off',
+	  'no-underscore-dangle': 'off',
 	  'no-console': 'off',
 	  'no-shadow': 'off',
 	  'no-restricted-syntax': [
