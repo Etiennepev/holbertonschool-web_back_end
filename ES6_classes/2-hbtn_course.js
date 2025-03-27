@@ -4,10 +4,10 @@ export default class HolbertonCourse {
       throw new Error('name must be a string');
     }
     if (typeof length !== 'number') {
-      throw new Error('length must be number')
+      throw new Error('length must be number');
     }
     if (!Array.isArray(students)) {
-      throw new Error('students must be an array')
+      throw new Error('students must be an array');
     }
     this._name = name;
     this._length = length;
