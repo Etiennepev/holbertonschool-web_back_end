@@ -2,7 +2,6 @@
 """1-async_comprehension.py"""
 from typing import List
 from typing import Tuple
-import math
 import csv
 
 
