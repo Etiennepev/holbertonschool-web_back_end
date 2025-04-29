@@ -1,2 +1,2 @@
-// create databasesuse
-my_db
+// create databases
+use my_db
