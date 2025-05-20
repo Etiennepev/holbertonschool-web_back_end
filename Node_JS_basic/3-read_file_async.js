@@ -9,7 +9,7 @@ function countStudents(path) {
 
       for (let i = 1; i < lines.length; i += 1) {
         const line = lines[i].trim();
-        if (!line);
+        if (!line) continue;
 
         const parts = line.split(',');
         const firstName = parts[0];
@@ -22,14 +22,15 @@ function countStudents(path) {
         total += 1;
       }
 
-      console.log(`Number of students: ${total}`);
+      let result = `Number of students: ${total}`;
       for (const field in students) {
         if (Object.prototype.hasOwnProperty.call(students, field)) {
           const list = students[field].join(', ');
-          console.log(`Number of students in ${field}: ${students[field].length}. List: ${list}`);
+          result += `\nNumber of students in ${field}: ${students[field].length}. List: ${list}`;
         }
       }
-      return output.trim();
+
+      return result;
     })
     .catch(() => {
       throw new Error('Cannot load the database');
